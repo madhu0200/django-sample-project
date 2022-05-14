@@ -1,0 +1,24 @@
+<html><style>
+    input{
+        margin: 5px;
+    }
+    form{
+        background-color: aqua;
+        font-size: 10px;
+        }
+</style>
+<form action = "{% url 'update_user' %}" method = "POST">
+    <fieldset>
+        {% csrf_token %}
+        {{form }}
+
+        <legend>Updation Form</legend>
+        <label for="firstname" >First Name:</label><input type="text" name="firstname" autofocus required minlength="3 ">
+        <label for="lastname">  Last Name :</label> <input type="text" name="lastname"  required minlength="3"><br>
+        <label for="email">     Email     :</label> <input type="email" name="email" required>
+        <label for="password">  Password  :</label><input type="password" name="password" required ><br>
+        <lable for="mobileno">  Mobile no :</lable> <input type="tel" name="mobileno" required minlength="10" maxlength="10"><br>
+        <center><input type="submit" value=Submit></center>
+    </fieldset>
+</form></html>
+

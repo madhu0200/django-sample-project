@@ -1,0 +1,19 @@
+<style>
+    input{
+        margin: 5px;
+    }
+    form{
+        background-color: aqua;
+        font-size: 10px;
+        }
+</style>
+<form method="POST" action="{% url 'signinuser' %}">
+    <fieldset>
+    {% csrf_token %}
+    {{form }}
+    <legend>sign in</legend>
+    <label for="email">     Email     :</label> <input type="email" name="email" required>
+    <label for="password">  Password  :</label><input type="password" name="password" required ><br>
+    <center><input type="submit" value=Submit></center>
+</fieldset>
+</form>
