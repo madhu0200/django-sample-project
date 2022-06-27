@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'signin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test2',
+        'NAME': 'DBNAME',
         'USER':'root',
-        'PASSWORD':'@96MF8t$JR~b',
-        'HOST':'103.177.225.37',
+        'PASSWORD':'PASSWORD',
+        'HOST':'MYSQLDATABASE',
         'PORT':'3306'
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': 'sqlite3',
